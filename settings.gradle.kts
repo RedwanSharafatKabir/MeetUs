@@ -20,5 +20,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "BlogReadingApp-MVVM"
+rootProject.name = "Meetmax"
 include(":app")

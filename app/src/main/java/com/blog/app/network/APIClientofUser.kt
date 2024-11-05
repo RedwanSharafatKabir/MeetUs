@@ -7,7 +7,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
-object APIClient {
+object APIClientofUser {
 
     fun create(context: Context): APIService {
 
@@ -22,7 +22,7 @@ object APIClient {
             }
 
         val retrofit = Retrofit.Builder()
-            .baseUrl(context.resources.getString(R.string.baseUrl))
+            .baseUrl(context.resources.getString(R.string.baseUrlUser))
             .addConverterFactory(GsonConverterFactory.create())
             .client(httpClient.build())
             .build()

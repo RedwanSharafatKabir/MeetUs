@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="@dimen/_8sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_5sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/postOwnerUserAvatar"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/sample_profile_avatar"
+                android:background="@drawable/grey_circle"
+                android:padding="@dimen/_3sdp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_gravity="center|start">
+
+                <TextView
+                    android:id="@+id/postOwnerUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="@string/username"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey_800"
+                    android:gravity="center|start"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:paddingEnd="@dimen/_3sdp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status_public"
+                    android:gravity="center|start"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:paddingEnd="@dimen/_3sdp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center|start"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/itemTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/grey_800"
+                android:gravity="center|start"
+                android:padding="@dimen/_3sdp"/>
+
+            <TextView
+                android:id="@+id/itemBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:padding="@dimen/_3sdp"/>
+
+        </LinearLayout>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sample_post_image"
+            app:riv_corner_radius="@dimen/_8sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userAvatar"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/sample_profile_avatar"
+                android:background="@drawable/grey_circle"
+                android:padding="@dimen/_3sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:weightSum="100">
+
+                <EditText
+                    android:id="@+id/userName"
+                    android:layout_width="0dp"
+                    android:layout_weight="80"
+                    android:layout_height="@dimen/_32sdp"
+                    android:background="@drawable/grey_curved_rectangle"
+                    android:hint="@string/write_a_comment"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey_800"
+                    android:gravity="center|start"
+                    android:padding="@dimen/_5sdp"/>
+
+                <ImageView
+                    android:id="@+id/sendComment"
+                    android:layout_width="0dp"
+                    android:layout_weight="20"
+                    android:layout_height="@dimen/_32sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bluish_grey_curved_rectangle"
+                    android:src="@drawable/outline_send_24"
+                    android:padding="@dimen/_6sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    app:tint="@color/special_blue" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

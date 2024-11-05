@@ -43,6 +43,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    implementation(libs.androidx.activity)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -59,6 +60,9 @@ dependencies {
 
     implementation(libs.glide)
     annotationProcessor(libs.glide.compiler)
+
+    implementation(libs.roundedimageview)
+    implementation(libs.circleimageview)
 
     implementation(libs.sdp.android)
 }
