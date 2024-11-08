@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Meetmax</string>
+    <string name="app_name">MeetUs</string>
     <string name="baseUrlPost">https://jsonplaceholder.typicode.com/</string>
     <string name="baseUrlUser">https://reqres.in/api/</string>
     <string name="status_public">Public</string>

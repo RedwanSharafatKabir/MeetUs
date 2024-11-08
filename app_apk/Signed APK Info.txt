@@ -1,0 +1,6 @@
+
+meetus_signed_bundle_key.jks
+
+Password: meetus#2024
+
+Alias: MeetUs
